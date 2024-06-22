@@ -200,3 +200,14 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 })
+
+document.querySelectorAll('.step-right').forEach(stepRight => {
+    stepRight.addEventListener('mouseenter', function() {
+      this.closest('.steps').classList.add('hover');
+    });
+  
+    stepRight.addEventListener('mouseleave', function() {
+      this.closest('.steps').classList.remove('hover');
+    });
+  });
+  
