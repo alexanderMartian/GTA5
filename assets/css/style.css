@@ -19,7 +19,7 @@ img {
 }
 body {
   font-family: "Oswald", sans-serif;
-  background-color: #1c1e1f;
+  background-color: #1d1e20;
 }
 
 /*--------------------------------------------------------------
@@ -39,6 +39,12 @@ body {
   align-items: center; 
   /* height: 50px; */ 
   background-color: transparent; 
+}
+
+.header-box {
+  background-color: #05040A;
+  width: 100%;
+  height: 100px;
 }
 
 #header >div {
@@ -806,7 +812,7 @@ a.footer-info-block-title:hover {
   #header { 
     flex-direction: row;
     padding: 0 5%;
-    margin: 3% 0 0;
+    margin: 100px 0 0;
   } 
 
   #header >div {
@@ -876,7 +882,7 @@ a.footer-info-block-title:hover {
     background-repeat: no-repeat;
   }
   .hero-wrapper {
-    height: 100vh;
+    height: 90vh;
   }
   .overlay {
     background: transparent;
