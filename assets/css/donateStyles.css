@@ -481,16 +481,6 @@ a.footer-info-block-title:hover {
 /* Header END */
 
 
-/* FOOTER ADAPTIVE START */
-
-@media screen and (min-width: 768px) {
-
- }
-
-@media screen and (min-width: 768px) {
-
-}
-
 @media screen and (min-width: 768px) {
 
   .menu-box-mobile {
@@ -545,11 +535,18 @@ a.footer-info-block-title:hover {
   
   .footer-copy {
     color: #FFFFFF;
-    font-size: 16px;
     margin-top: 0;
   }
   .footer-copy p {
     margin-bottom: 0;
+    font-size: 13px;
+  }
+
+  .footer-info-block-title > * {
+    font-size: 18px !important;
+  }
+  .footer-info-block-item {
+    font-size: 13px !important;
   }
   a.footer-info-block-title:hover {
     color: #1ea9f6;

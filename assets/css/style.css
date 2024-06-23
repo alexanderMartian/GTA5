@@ -712,6 +712,10 @@ a.footer-info-block-title:hover {
   .mySwiper {
     display: none;
   }
+
+  .header-box {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1536px) {
