@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/mont');
 
 * p{
   margin: 0;
@@ -19,7 +21,7 @@ ul {
 }
 
 body {
-  font-family: "Oswald", sans-serif !important;
+  font-family: "Oswald", sans-serif;
 }
 
 .mainWrapper {
@@ -105,8 +107,7 @@ body {
   color: rgb(115, 159, 111);
   display: flex;
   justify-content: space-between;
-  width: 120px;
-
+  width: 135px;
   align-items: center;
 }
 
@@ -117,6 +118,9 @@ body {
 .secure-badge p {
   margin-top: 0;
   margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .form-group {
@@ -153,6 +157,8 @@ body {
   background-color: #181818;
   color: #ffffff;
   cursor: pointer;
+  /* font-family: 'Mont', sans-serif;
+  font-weight: 600;                                             */
 }
 
 .input:hover {
@@ -175,6 +181,7 @@ body {
   opacity: 0.8;
   text-decoration: underline;
   margin-left: 5px;
+  font-family: "Inter", sans-serif;
 }
 
 
@@ -201,15 +208,14 @@ body {
 }
 
 .conditions {
-  font-size: 14px;
   color: #cfcfd0;
   opacity: 0.8;
   display: flex;
-  align-items: center;
   cursor: pointer;
   font-size: 16px;
   align-items: flex-start;
   font-weight: 400;
+  font-family: "Inter", sans-serif;
 }
 
 .conditions input[type="checkbox"] {
@@ -557,10 +563,6 @@ a.footer-info-block-title:hover {
 
  @media screen and (min-width: 820px) {
 
-  .secure-badge {
-    width: 123px;
-  }
-
   .main-container {
     padding: 20px 230px 80px;
   }
@@ -655,6 +657,11 @@ a.footer-info-block-title:hover {
   }
   .secure-badge {
     padding: 3px 16px;
+    width: 120px;
+  }
+
+  .secure-badge p {
+    font-size: 11px;
   }
 
   .overlay-footer {
@@ -722,6 +729,14 @@ a.footer-info-block-title:hover {
 
   .footer {
     bottom: 3.5%;
+  }
+
+  .secure-badge {
+    width: 140px;
+  }
+
+  .secure-badge p {
+    font-size: 15px;
   }
 
   .footer-copy p{
