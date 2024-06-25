@@ -21,7 +21,7 @@ ul {
 }
 
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif !important;
 }
 
 .mainWrapper {
@@ -118,7 +118,7 @@ body {
 .secure-badge p {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
   font-weight: 700;
   font-size: 14px;
 }
@@ -181,7 +181,7 @@ body {
   opacity: 0.8;
   text-decoration: underline;
   margin-left: 5px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
 }
 
 
@@ -215,7 +215,7 @@ body {
   font-size: 16px;
   align-items: flex-start;
   font-weight: 400;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
 }
 
 .conditions input[type="checkbox"] {

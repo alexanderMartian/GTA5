@@ -63,6 +63,14 @@
       <div class="box-container">
         <div class="menu-box"></div>
       </div>
+      <div class="modal" id="modal">
+        <div class="question">Ви впевнені?</div>
+        <div class="buttons">
+            <button class="confirm" onclick="confirmAction()">Так</button>
+            <button class="cancel" onclick="closeModal()">Ні</button>
+        </div>
+        <div class="vertical-line"></div>
+      </div>
       <img
         src="assets/images/ham-menu.png"
         alt=""
@@ -71,45 +79,38 @@
       />
     </header>
     <!-- End Header -->
-
     <main>
       <section id="hero">
         <div class="hero-wrapper">
           <div class="overlay"></div>
           <img src="assets/images/hero-left.webp" alt="" class="hero-left" />
-          <div class="hero-display-cards">
-            <div class="hero-card">
-              <div class="card-content">
-                <img src="assets/images/card-icon-left.png" alt="" />
-                <h4>Форум</h4>
-              </div>
-            </div>
-            <div class="hero-card">
+          <div class="hero-display-cards"> 
+            <div class="hero-card"> 
+              <img src="assets/images/hero-card-left.webp" alt="hero-card-img" class="hero-card-img" /> 
+              <div class="card-content"> 
+                <img src="assets/images/card-icon-left.png" alt="" /> 
+                <h4>Форум</h4> 
+              </div> 
+            </div> 
+            <div class="hero-card"> 
               <img src="assets/images/arrow-down.png" alt="" class="arrow-down" />
-              <div class="card-content card-middle-content">
-                <a
-                  href="https://youtu.be/xv3wFGGeIsI?si=KuW1cPkFz2xmjJqj"
-                  class="glightbox3"
-                >
-                  <img
-                    src="assets/images/card-icon-middle.png"
-                    alt=""
-                    class="card-middle-icon"
-                  />
-                </a>
-                <h4>
-                  ПОЧАТИ 
-                  <br/>
-                  ГРУ
-                </h4>
-              </div>
-            </div>
-            <div class="hero-card">
-              <div class="card-content">
-                <img src="assets/images/card-icon-right.png" alt="" />
-                <h4>ДОНАТ</h4>
-              </div>
-            </div>
+              <img src="assets/images/hero-card-middle.webp" class="hero-card-img"/> 
+              <div class="card-content"> 
+                <img src="assets/images/card-icon-middle.png" class="card-middle-icon"/> 
+                <h4> 
+                  ПОЧАТИ  
+                  <br/> 
+                  ГРУ 
+                </h4> 
+              </div> 
+            </div> 
+            <div class="hero-card"> 
+              <img src="assets/images/hero-card-right.webp" alt="hero-card-img" class="hero-card-img" /> 
+              <div class="card-content"> 
+                <img src="assets/images/card-icon-right.png" alt="" /> 
+                <h4>ДОНАТ</h4> 
+              </div> 
+            </div> 
           </div>
           <img src="assets/images/hero-right.webp" alt="" class="hero-right" />
           <img src="assets/images/linear.png" alt="" class="botoom-linear-hero" />
@@ -410,7 +411,7 @@
                   </div>
                   <h5>НАШ ІНСТАГРАМ</h5>
                   <p>Офіційний Instagram акаунт для отримання гарного настрою</p>
-                  <a href="index.html" class="module-border-wrap">
+                  <a href="index.html" class="module-border-wrap btn-insta">
                     <div class="module">ДОЄДНАТИСЯ</div>
                   </a>
                 </div>

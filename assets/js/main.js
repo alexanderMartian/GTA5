@@ -195,19 +195,36 @@ window.addEventListener("DOMContentLoaded", function () {
         opacity: 1,
         y: 0
     }, "<")
-
-
-
-
 })
 
-document.querySelectorAll('.step-right').forEach(stepRight => {
-    stepRight.addEventListener('mouseenter', function() {
-      this.closest('.steps').classList.add('hover');
+document.querySelectorAll('.steps').forEach(step => {
+    step.addEventListener('mouseenter', function() {
+      this.classList.add('hover');
     });
   
-    stepRight.addEventListener('mouseleave', function() {
-      this.closest('.steps').classList.remove('hover');
+    step.addEventListener('mouseleave', function() {
+      this.classList.remove('hover');
     });
   });
   
+  document.querySelectorAll('.view-btn').forEach(btn => {
+    btn.addEventListener('mouseenter', function() {
+      this.classList.add('hover');
+    });
+  
+    btn.addEventListener('mouseleave', function() {
+      this.classList.remove('hover');
+    });
+  });
+
+  function openModal() {
+    document.getElementById('modal').classList.add('open');
+}
+
+function closeModal() {
+    document.getElementById('modal').classList.remove('open');
+}
+
+function confirmAction() {
+    window.location.href = 'http://example.com'; // измените URL на нужный вам
+}
