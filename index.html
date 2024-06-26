@@ -39,11 +39,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
     />
-
     <!-- app css  -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <div class="custom-modal" id="custom-modal">
+      <div class="custom-question">Ви впевнені?</div>
+      <div class="custom-buttons">
+        <a class="custom-confirm" href="donate.html">Так</a>
+        <button class="custom-cancel" onclick="closeCustomModal()">Ні</button>
+      </div>
+      <div class="custom-vertical-line"></div>
+    </div>
     <div class="header-box"></div>
     <!-- ======= Header ======= -->
     <header id="header">
@@ -51,7 +58,7 @@
         <ul class="menu-list">
           <li class="d-block d-md-none menu-list-link"><a href="index.html">ПОЧАТИ ГРУ</a></li>
           <li class="d-block d-md-none menu-list-link"><a href="index.html">ФОРУМ</a></li>
-          <li class="d-block d-md-none menu-list-link"><a href="index.html">ДОНАТ</a></li>
+          <li class="d-block d-md-none menu-list-link"><a href="donate.html">ДОНАТ</a></li>
           <li class="menu-list-link"><a href="index.html">Про нас</a></li>
           <li class="menu-list-link"><a href="index.html">Як почати грати</a></li>
           <li class="menu-list-link"><a href="index.html">FAQ</a></li>
@@ -61,15 +68,7 @@
         <a href="index.html" class="logo">MOONLIGHT RP</a>
       </div>
       <div class="box-container">
-        <div class="menu-box"></div>
-      </div>
-      <div class="modal" id="modal">
-        <div class="question">Ви впевнені?</div>
-        <div class="buttons">
-            <button class="confirm" onclick="confirmAction()">Так</button>
-            <button class="cancel" onclick="closeModal()">Ні</button>
-        </div>
-        <div class="vertical-line"></div>
+        <div class="menu-box" onclick="openCustomModal()"></div>
       </div>
       <img
         src="assets/images/ham-menu.png"
@@ -86,30 +85,36 @@
           <img src="assets/images/hero-left.webp" alt="" class="hero-left" />
           <div class="hero-display-cards"> 
             <div class="hero-card"> 
-              <img src="assets/images/hero-card-left.webp" alt="hero-card-img" class="hero-card-img" /> 
-              <div class="card-content"> 
-                <img src="assets/images/card-icon-left.png" alt="" /> 
-                <h4>Форум</h4> 
-              </div> 
+              <a href="">
+                <img src="assets/images/hero-card-left.webp" alt="hero-card-img" class="hero-card-img" /> 
+                <div class="card-content"> 
+                  <img src="assets/images/card-icon-left.png" alt="" /> 
+                  <h4>Форум</h4> 
+                </div> 
+              </a>
             </div> 
             <div class="hero-card"> 
-              <img src="assets/images/arrow-down.png" alt="" class="arrow-down" />
-              <img src="assets/images/hero-card-middle.webp" class="hero-card-img"/> 
-              <div class="card-content"> 
-                <img src="assets/images/card-icon-middle.png" class="card-middle-icon"/> 
-                <h4> 
-                  ПОЧАТИ  
-                  <br/> 
-                  ГРУ 
-                </h4> 
-              </div> 
+              <a href="">
+                <img src="assets/images/arrow-down.png" alt="" class="arrow-down" />
+                <img src="assets/images/hero-card-middle.webp" class="hero-card-img"/> 
+                <div class="card-content"> 
+                  <img src="assets/images/card-icon-middle.png" class="card-middle-icon"/> 
+                  <h4> 
+                    ПОЧАТИ  
+                    <br/> 
+                    ГРУ 
+                  </h4> 
+                </div> 
+              </a>
             </div> 
             <div class="hero-card"> 
-              <img src="assets/images/hero-card-right.webp" alt="hero-card-img" class="hero-card-img" /> 
-              <div class="card-content"> 
-                <img src="assets/images/card-icon-right.png" alt="" /> 
-                <h4>ДОНАТ</h4> 
-              </div> 
+              <a href="donate.html">
+                <img src="assets/images/hero-card-right.webp" alt="hero-card-img" class="hero-card-img" /> 
+                <div class="card-content"> 
+                  <img src="assets/images/card-icon-right.png" alt="" /> 
+                  <h4>ДОНАТ</h4> 
+                </div> 
+              </a>
             </div> 
           </div>
           <img src="assets/images/hero-right.webp" alt="" class="hero-right" />
@@ -203,8 +208,7 @@
                   />
                 </div>
               </div>
-            </div>
-            
+            </div>  
           </div>
         </section>
         <div>
@@ -247,7 +251,7 @@
                     </div>
                   </div>
                   <div class="step-right">
-                    <a href="index.html" class="view-btn">Придбати</a>
+                    <a href="https://www.rockstargames.com/gta-v?_gl=1*6dbdau*_ga*MTY5MTkzMDA0Ny4xNjgyNjA5MTA4*_ga_PJQ2JYZDQC*MTcwMjQwODE2MC41LjAuMTcwMjQwODE2Ny4wLjAuMA..#_ga=2.255751498.391090278.1702408161-1691930047.1682609108" class="view-btn">Придбати</a>
                   </div>
                 </div>
               </div>
@@ -263,7 +267,7 @@
                     </div>
                   </div>
                   <div class="step-right">
-                    <a href="index.html" class="view-btn">RAGE:MP</a>
+                    <a href="https://rage.mp/" class="view-btn">RAGE:MP</a>
                   </div>
                 </div>
               </div>
@@ -279,7 +283,7 @@
                     </div>
                   </div>
                   <div class="step-right">
-                    <a href="index.html" class="view-btn active">Скопіювати</a>
+                    <button class="view-btn active" onclick="copyToClipboard()">Скопіювати</button>
                   </div>
                 </div>
               </div>
@@ -302,7 +306,7 @@
                       </div>
                     </div>
                     <div class="step-right">
-                      <a href="index.html" class="view-btn">Придбати</a>
+                      <a href="https://www.rockstargames.com/gta-v?_gl=1*6dbdau*_ga*MTY5MTkzMDA0Ny4xNjgyNjA5MTA4*_ga_PJQ2JYZDQC*MTcwMjQwODE2MC41LjAuMTcwMjQwODE2Ny4wLjAuMA..#_ga=2.255751498.391090278.1702408161-1691930047.1682609108" class="view-btn">Придбати</a>
                     </div>
                   </div>
                 </div>
@@ -318,7 +322,7 @@
                       </div>
                     </div>
                     <div class="step-right">
-                      <a href="index.html" class="view-btn">RAGE:MP</a>
+                      <a href="https://rage.mp/" class="view-btn">RAGE:MP</a>
                     </div>
                   </div>
                 </div>
@@ -337,7 +341,7 @@
                       </div>
                     </div>
                     <div class="step-right">
-                      <a href="index.html" class="view-btn active">Скопіювати</a>
+                      <button class="view-btn active" onclick="copyToClipboard()">Скопіювати</button>
                     </div>
                   </div>
                 </div>
@@ -374,7 +378,7 @@
                     Офіційний Discord канал для спілкування гравців і також новини
                     та бонуси
                   </p>
-                  <a href="index.html" class="social-btn btn-discord">ДОЄДНАТИСЯ</a>
+                  <a href="https://discord.com/moonlight-rp" class="social-btn btn-discord">ДОЄДНАТИСЯ</a>
                 </div>
               </div>
               <div class="col-md-6 col-lg-3 wow fadeInUp social-item" data-wow-duration="2s">
@@ -387,7 +391,7 @@
                     Офіційний Youtube канал для перегляду оновлень, отримання
                     гарного настрою.
                   </p>
-                  <a href="index.html" class="social-btn youtube-btn btn-youtube"
+                  <a href="https://www.youtube.com/@MoonlightRoleplay-ms4pu/featured" class="social-btn youtube-btn btn-youtube"
                     >ДОЄДНАТИСЯ</a
                   >
                 </div>
@@ -399,7 +403,7 @@
                   </div>
                   <h5>Наш TIKTOK</h5>
                   <p>Офіційний Tiktok канал для отримання гарного настрою</p>
-                  <a href="index.html" class="social-btn tiktok-icon btn-tiktok"
+                  <a href="https://www.tiktok.com/@moonlight_rp_ua" class="social-btn tiktok-icon btn-tiktok"
                     >ДОЄДНАТИСЯ
                   </a>
                 </div>
@@ -411,7 +415,7 @@
                   </div>
                   <h5>НАШ ІНСТАГРАМ</h5>
                   <p>Офіційний Instagram акаунт для отримання гарного настрою</p>
-                  <a href="index.html" class="module-border-wrap btn-insta">
+                  <a href="https://www.instagram.com/moonlightrp.ua?igsh=b3RlMTFodzYwbDlq" class="module-border-wrap btn-insta">
                     <div class="module">ДОЄДНАТИСЯ</div>
                   </a>
                 </div>
@@ -474,7 +478,6 @@
             </div>
           </div>
         </section>
-      
         <img src="assets/images/linear.png" alt="" class="botoom-linear-steps" />
         <!-- <img src="assets/images/linear.png" alt="" class="botoom-linear-hero" /> -->
       </section>
@@ -493,11 +496,11 @@
             <a href="index.html" class="footer-info-block-item">Політика конфіденційності</a>
           </div>
           <div class="footer-info-block">
-            <div href="index.html" class="footer-info-block-title">
+            <div class="footer-info-block-title">
               <h5>Контакти</h5>
             </div>
-            <a href="index.html" class="footer-info-block-item"> Канал підтримки в Discord</a>
-            <a href="index.html" class="footer-info-block-item">help.moonlightrp@gmail.com</a>
+            <a href="https://discord.com/moonlight-rp" class="footer-info-block-item"> Канал підтримки в Discord</a>
+            <a href="mailto:help.moonlightrp@gmail.com" class="footer-info-block-item">help.moonlightrp@gmail.com</a>
           </div>
         </div>
         <div class="footer-copy">

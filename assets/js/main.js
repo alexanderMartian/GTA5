@@ -217,14 +217,21 @@ document.querySelectorAll('.steps').forEach(step => {
     });
   });
 
-  function openModal() {
-    document.getElementById('modal').classList.add('open');
+function openCustomModal() {
+    document.getElementById('custom-modal').classList.add('open');
 }
 
-function closeModal() {
-    document.getElementById('modal').classList.remove('open');
+function closeCustomModal() {
+    document.getElementById('custom-modal').classList.remove('open');
 }
 
-function confirmAction() {
-    window.location.href = 'http://example.com'; // измените URL на нужный вам
+function confirmCustomAction() {
+    window.location.href = 'http://example.com';
+}
+
+function copyToClipboard() {
+    const textToCopy = "play.moonlightrp.fun 22005";
+    navigator.clipboard.writeText(textToCopy).catch(function(error) {
+        console.error("Произошла ошибка при копировании текста: ", error);
+    });
 }

@@ -201,10 +201,11 @@ body {
   margin-top: 90px;
   position: absolute;
   top: 300px;
+  font-family: "Oswald", sans-serif !important;
 }
 
 .btn-submit:hover {
-  background-color: #0056b3;
+
 }
 
 .conditions {

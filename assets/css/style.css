@@ -18,7 +18,7 @@ img {
   display: block;
 }
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif !important;
   background-color: #1d1e20;
 }
 
@@ -99,68 +99,83 @@ body {
   display: none;
 }
 
-.modal {
-  /* position: fixed;
-  top: 50%;
+.custom-modal {
+  position: fixed;
+  top: 20%;
   right: -100%;
-  transform: translateY(-50%); */
-  width: 300px;
-  background-color: white;
-  border-radius: 10px 0 0 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: right 0.3s;
-  padding: 20px;
+  transform: translateY(-50%);
+  width: 340px;
+  background-color: white !important;
+  border-radius: 10px 0 0 10px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+  transition: right 0.3s !important;
+  padding: 20px 40px 20px 0 !important;
+  z-index: 1000 !important;
 }
 
-.modal.open {
-  right: 30px;
+.custom-modal.open {
+  right: 0 !important;
 }
 
-.modal .question {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.custom-question {
+  font-size: 35px !important;
+  font-weight: bold !important;
+  margin-bottom: 15px !important;
+  text-align: center !important;
 }
 
-.modal .buttons {
-  display: flex;
-  justify-content: space-between;
+.custom-buttons {
+  display: flex !important;
+  justify-content: center !important;
 }
 
-.modal .buttons button {
-  width: 45%;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: white;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+.custom-confirm {
+  margin-right: 25px !important;
+  text-align: center !important;
+  color: black !important;
 }
 
-.modal .buttons button:hover {
-  background-color: #007bff;
-  color: white;
+.custom-buttons * {
+  width: 30% !important;
+  padding: 5px 20px !important;
+  border: 1px solid black !important;
+  border-radius: 10px !important;
+  background-color: white !important;
+  font-size: 25px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s, color 0.3s !important;
 }
 
-.modal .buttons button.confirm {
-  background-color: #007bff;
-  color: white;
-  border: none;
+.custom-buttons button.custom-cancel {
+  background-color: white !important;
+  color: black !important;
 }
 
-.modal .buttons button.cancel {
-  background-color: white;
-  color: black;
+.custom-buttons button:hover {
+  background-color: #007bff !important;
+  color: white !important;
+  border-color: #007bff !important;
 }
 
-.modal .vertical-line {
-  height: 100%;
-  width: 1px;
-  background-color: gray;
-  position: absolute;
-  right: 0;
-  top: 0;
+.custom-buttons a:hover {
+  background-color: #007bff !important;
+  color: white !important;
+  border-color: #007bff !important;
+}
+
+.custom-cancel:hover {
+  background-color: #007bff !important;
+  color: white !important;
+  border-color: #007bff !important;
+}
+
+.custom-vertical-line {
+  height: 60% !important;
+  width: 1px !important;
+  background-color: gray !important;
+  position: absolute !important;
+  right: 30px !important;
+  top: 30px !important;
 }
 
 /* hero section  */
@@ -257,7 +272,7 @@ body {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.hero-card:hover > .hero-card-img {
+.hero-card a:hover > .hero-card-img {
   transform: scale(1.1);
   filter: grayscale(0%);
 }
@@ -270,7 +285,9 @@ body {
   text-align: center;
   color: #ffffff;
   position: absolute;
-
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
 }
 
 .card-content img {
