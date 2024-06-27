@@ -50,9 +50,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle,
-  rgba(15, 17, 18, 0.4) 0%, /* Darker */
-  rgba(18, 20, 21, 0.6) 50% /* Darker */
+  background: radial-gradient(circle, 
+  rgba(15, 17, 18, 0.85) 0%,
+  rgba(18, 20, 21, 0.95) 50% 
 );
   z-index: -1;
 }
@@ -337,11 +337,11 @@ a.footer-info-block-title:hover {
 
 .botoom-linear-steps {
   position: absolute;
-  bottom: 0;
+  bottom: 20%;
   left: 0;
   width: 100%;
-  height: 300px;
-  z-index: 11;
+  height: 90px;
+  z-index: -12;
 }
 
 
@@ -596,7 +596,7 @@ a.footer-info-block-title:hover {
   }
 
   .mainPictures img {
-    width: 70%;
+    width: 75%;
     object-fit: cover;
     max-width: 100%;
   }
@@ -700,12 +700,16 @@ a.footer-info-block-title:hover {
     position: absolute;
     bottom: 30px;
   }
+
+  .botoom-linear-steps {
+    display: none;
+  }
  }
 
  @media screen and (min-width: 1536px) {
 
   .mainPictures img {
-    width: 100%;
+    width: 90%;
   }
 
   .input {
