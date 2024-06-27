@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url(https://db.onlinewebfonts.com/c/8db9d40071db7a82e8941dd9a1adeaba?family=Druk+Wide+Cy+Web+Medium+Regular);
 
 * {
   margin: 0;
@@ -44,7 +45,7 @@ body {
 .header-box {
   background-color: #05040A;
   width: 100%;
-  height: 100px;
+  height: 81px;
 }
 
 #header >div {
@@ -67,7 +68,11 @@ body {
 }
 
 .menu-list-link:hover a { 
-  color: #1ea9f6
+  color: #1ea9f6;
+} 
+
+.menu-list-link:hover { 
+  color: #1ea9f6;
 } 
 
 .logo-container {
@@ -104,7 +109,7 @@ body {
   top: 20%;
   right: -100%;
   transform: translateY(-50%);
-  width: 340px;
+  width: 300px;
   background-color: white !important;
   border-radius: 10px 0 0 10px !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
@@ -118,10 +123,12 @@ body {
 }
 
 .custom-question {
-  font-size: 35px !important;
+  font-size: 20px !important;
   font-weight: bold !important;
   margin-bottom: 15px !important;
   text-align: center !important;
+  font-family: "Druk Wide Cy Web Medium Regular" !important;
+  font-weight: 500 !important;
 }
 
 .custom-buttons {
@@ -136,14 +143,16 @@ body {
 }
 
 .custom-buttons * {
-  width: 30% !important;
-  padding: 5px 20px !important;
+  width: 29% !important;
+  padding: 5px 0 !important;
   border: 1px solid black !important;
   border-radius: 10px !important;
   background-color: white !important;
-  font-size: 25px !important;
+  font-size: 15px !important;
   cursor: pointer !important;
   transition: background-color 0.3s, color 0.3s !important;
+  font-family: "Druk Wide Cy Web Medium Regular" !important;
+  font-weight: 500 !important;
 }
 
 .custom-buttons button.custom-cancel {
@@ -152,30 +161,31 @@ body {
 }
 
 .custom-buttons button:hover {
-  background-color: #007bff !important;
+  background-color: #1ea9f6 !important;
   color: white !important;
-  border-color: #007bff !important;
+  border-color: #1ea9f6 !important;
 }
 
 .custom-buttons a:hover {
-  background-color: #007bff !important;
+  background-color: #1ea9f6 !important;
   color: white !important;
-  border-color: #007bff !important;
+  border-color: #1ea9f6 !important;
 }
 
 .custom-cancel:hover {
-  background-color: #007bff !important;
+  background-color: #1ea9f6 !important;
   color: white !important;
-  border-color: #007bff !important;
+  border-color: #1ea9f6 !important;
 }
 
 .custom-vertical-line {
-  height: 60% !important;
-  width: 1px !important;
+  height: 70% !important;
+  width: 2px !important;
   background-color: gray !important;
+  border-radius: 20px 0px 20px 20px; 
   position: absolute !important;
-  right: 30px !important;
-  top: 30px !important;
+  right: 50px !important;
+  top: 20px !important;
 }
 
 /* hero section  */
@@ -264,6 +274,7 @@ body {
   position: relative;
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
+  z-index: 101;
 }
 
 .hero-card img {
@@ -353,7 +364,7 @@ body {
 .video-banner {
   width: 100%;
   height: 450px;
-  background-image: url("../images/video-banner.png");
+  background-image: url("../images/video-banner.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -424,6 +435,7 @@ padding: 60px 0 30px;
   transform: translateY(-2px);
   margin-bottom: 0;
   font-size: 18px;
+  font-family: "Inter", sans-serif !important;
 }
 #steps {
   position: relative;
@@ -782,6 +794,10 @@ a.footer-info-block-title:hover {
   .header-box {
     display: none;
   }
+
+  .menu-list-link-mobile {
+    display: none !important;
+  }
 }
 
 
@@ -1009,6 +1025,8 @@ a.footer-info-block-title:hover {
   .card-content {
     display: flex;
     align-items: center;
+    text-align: justify;
+    left: 45%;
   }
 
   .card-content h4 {
@@ -1016,7 +1034,7 @@ a.footer-info-block-title:hover {
   }
   .card-content img {
     width: 40% !important;
-    margin: 0 auto 0 0;
+    margin: 0 20px 0 0;
   }
   .card-middle-content h4 {
     font-size: 20px;

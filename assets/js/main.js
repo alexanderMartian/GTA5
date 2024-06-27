@@ -1,13 +1,13 @@
 $(document).ready(function () {
 
     $('#toggleButton').click(function () {
-        if ($(window).width() < 768) {
+        if ($(window).width() < 821) {
             $('#toggleDiv').slideToggle();
         }
     });
 
     $(window).resize(function () {
-        if ($(window).width() >= 768) {
+        if ($(window).width() >= 821) {
             $('#toggleDiv').show(); // Always show on desktop
         } else {
             $('#toggleDiv').hide(); // Always hide on mobile
