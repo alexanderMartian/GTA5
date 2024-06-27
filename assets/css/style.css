@@ -242,6 +242,7 @@ body {
   z-index: 11;
 }
 .botoom-dots {
+  display: none;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -808,6 +809,10 @@ a.footer-info-block-title:hover {
 
   .hero-wrapper {
     padding-top: 100px;
+  }
+
+  .botoom-dots {
+    display: block;
   }
 }
 

@@ -235,3 +235,8 @@ function copyToClipboard() {
         console.error("Произошла ошибка при копировании текста: ", error);
     });
 }
+
+document.getElementById('scroll-to-steps').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('steps').scrollIntoView({ behavior: 'smooth' });
+});
