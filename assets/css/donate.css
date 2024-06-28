@@ -114,7 +114,7 @@ body {
 }
 
 .secure-badge div {
-  margin-bottom: 3px;
+  margin-bottom: 7px;
 }
 
 .secure-badge p {
@@ -259,7 +259,7 @@ body {
 
 .footer {
   position: relative;
-  background-image: url("../images/donate-mobile-back.png");
+  background-image: url("../images/donate-mobile-back.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -483,7 +483,8 @@ a.footer-info-block-title:hover {
   }
   .toggle-icon {
     cursor: pointer;
-    display: block;
+    display: flex;
+    justify-content: end;
   }
 }
 
@@ -602,7 +603,7 @@ a.footer-info-block-title:hover {
  @media screen and (min-width: 1250px) {
 
   body {
-    background-image: url("../images/donate-desktop-back.png");
+    background-image: url("../images/donate-desktop-back.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -622,7 +623,7 @@ a.footer-info-block-title:hover {
   }
 
   .mainPictures img {
-    width: 75%;
+    width: 70%;
     object-fit: cover;
     max-width: 100%;
   }
@@ -792,7 +793,7 @@ a.footer-info-block-title:hover {
  @media screen and (min-width: 1980px) {
 
   .mainPictures img {
-    width: 88%;
+    width: 85%;
   }
   .main-container {
     padding: 14% 200px 0 0;

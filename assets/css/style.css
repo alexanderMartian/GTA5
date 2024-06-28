@@ -100,7 +100,7 @@ body {
   margin-right: 20px;
   cursor: pointer;
 }
-.toggle-icon {
+.toggle-icon  {
   display: none;
 }
 
@@ -191,7 +191,7 @@ body {
 /* hero section  */
 
 #hero {
-  background-image: url("../images/hero-bg.png");
+  background-image: url("../images/hero-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -314,7 +314,7 @@ body {
 }
 
 .card-middle-icon {
-  width: 65% !important;
+  width: 55% !important;
 }
 
 .card-middle-content {
@@ -328,6 +328,19 @@ body {
   transform: translateX(-50%);
   top: -50px;
   animation: upDown 2s infinite;
+}
+
+.video-link-icon {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.video-link-icon {
+  display: flex !important;
+}
+
+.video-icon {
+  width: 50%;
 }
 
 @keyframes upDown {
@@ -346,7 +359,7 @@ body {
   position: relative;
 }
 .video-steps {
-  background-image: url("../images/video-background.png");
+  background-image: url("../images/video-background.webp");
   background-size: cover;
   background-position: bottom bottom;
   background-repeat: no-repeat;
@@ -387,12 +400,12 @@ padding: 60px 0 30px;
   width: 50px;
 }
 .union-left {
-  top: 0;
-  left: 0;
+  top: -10px;
+  left: -10px;
 }
 .union-right {
-  top: 0;
-  right: 0;
+  top: -10px;
+  right: -10px;
 }
 /* .video-gallery {
   width: 100%;
@@ -508,7 +521,7 @@ padding: 60px 0 30px;
   transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 .steps.hover {
-  background-image: url("../images/step-3.png");
+  background-image: url("../images/step-3.webp");
   transform: scale(1.05);
 }
 .steps.hover .step-info h4,
@@ -575,7 +588,7 @@ padding: 60px 0 30px;
 
 #sofq {
   position: relative;
-  background-image: url("../images/trees.png");
+  background-image: url("../images/trees.webp");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -615,6 +628,7 @@ padding: 60px 0 30px;
   font-weight: 600;
   color: rgb(162, 162, 162);
   line-height: 21px;
+  margin: 10px 0 25px;
 }
 .social-btn {
   color: #ffffff;
@@ -687,7 +701,7 @@ padding: 60px 0 30px;
 }
 .footer {
   position: relative;
-  background-image: url("../images/footer-bg.png");
+  background-image: url("../images/footer-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1056,7 +1070,8 @@ a.footer-info-block-title:hover {
   }
   .toggle-icon {
     cursor: pointer;
-    display: block;
+    display: flex;
+    justify-content: end;
   }
   .title-bg {
     display: block;
@@ -1248,7 +1263,7 @@ a.footer-info-block-title:hover {
 @media screen and (min-width: 768px) {
   .footer {
 
-    padding: 150px 5% 5%;
+    padding: 150px 5% 3%;
   }
   .footer-top {
     height: 190px;
