@@ -225,9 +225,6 @@ function closeCustomModal() {
     document.getElementById('custom-modal').classList.remove('open');
 }
 
-function confirmCustomAction() {
-    window.location.href = 'http://example.com';
-}
 
 function copyToClipboard() {
     const textToCopy = "play.moonlightrp.fun 22005";
@@ -236,7 +233,9 @@ function copyToClipboard() {
     });
 }
 
-document.getElementById('scroll-to-steps').addEventListener('click', function(event) {
-    event.preventDefault();
-    document.getElementById('steps').scrollIntoView({ behavior: 'smooth' });
+document.querySelectorAll('.scroll-to-steps').forEach(function(element) {
+    element.addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('steps').scrollIntoView({ behavior: 'smooth' });
+    });
 });
