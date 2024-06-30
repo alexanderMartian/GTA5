@@ -522,7 +522,7 @@ padding: 60px 0 30px;
 }
 .steps.hover {
   background-image: url("../images/step-3.webp");
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .steps.hover .step-info h4,
 .steps.hover .step-info p {
@@ -1283,6 +1283,7 @@ a.footer-info-block-title:hover {
   
   .footer-info {
     display: flex;
+    align-items: flex-end;
   }
   
   .footer-info > div:first-child {

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url(https://db.onlinewebfonts.com/c/8db9d40071db7a82e8941dd9a1adeaba?family=Druk+Wide+Cy+Web+Medium+Regular);
+@import url('https://fonts.cdnfonts.com/css/mont');
 
 * p{
   margin: 0;
@@ -140,17 +141,6 @@ body {
   position: relative;
 }
 
-.menu-box-mobile {
-  background-color: #1ea9f6;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  position: absolute;
-  top: -5px;
-  border-radius: 5px;
-  z-index: 1;
-}
-
 .input {
   width: 100%;
   padding: 10px 30px 10px 50px;
@@ -160,8 +150,9 @@ body {
   color: #ffffff;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.5);
-  /* font-family: Mont;
-  font-weight: 600;                           */
+  font-family: 'Mont', sans-serif;
+  font-weight: 500;
+  font-size: 16px;                          
 }
 
 .input:hover {
@@ -343,6 +334,7 @@ a.footer-info-block-title:hover {
   margin-top: 5px;
   font-size: 16px;
   text-decoration: none !important;
+  font-family: 'Mont', sans-serif;
 }
 
 .footer-copy {
@@ -350,6 +342,7 @@ a.footer-info-block-title:hover {
   font-size: 16px;
   text-align: center;
   margin-top: 30px;
+  font-family: 'Mont', sans-serif;
 }
 
 .botoom-linear-steps {
@@ -367,7 +360,7 @@ a.footer-info-block-title:hover {
 
 #header {
   position: absolute; 
-  margin: 0 30px 0;
+  margin: 0 40px 0;
   left: 0; 
   top: 0; 
   right: 0; 
@@ -393,6 +386,8 @@ a.footer-info-block-title:hover {
   margin: 0; 
   padding: 20px; 
   cursor: pointer;
+  font-family: 'Mont', sans-serif;
+  font-weight: 800;
 } 
 
 .menu-list li a {
@@ -496,6 +491,9 @@ a.footer-info-block-title:hover {
 .menu-box {
   margin-right: 10px;
 }
+.menu-list-link {
+  text-transform: uppercase;
+}
 }
 /* Header END */
 
@@ -512,7 +510,7 @@ a.footer-info-block-title:hover {
   }
 
   .footer {
-    padding: 150px 5% 5%;
+    padding: 150px 60px 60px;
   }
   .footer-top {
     height: 190px;
@@ -531,6 +529,7 @@ a.footer-info-block-title:hover {
   
   .footer-info {
     display: flex;
+    align-items: flex-end;
   }
   
   .footer-info > div:first-child {
@@ -549,6 +548,10 @@ a.footer-info-block-title:hover {
 
   .footer-info-block-item {
     color: #ffffff;
+  }
+
+  .footer-info-block-item:first-child {
+
     margin-bottom: 5px;
   }
   
@@ -591,12 +594,21 @@ a.footer-info-block-title:hover {
   .menu-list-link-mobile {
     display: none !important;
   }
+  .menu-list li { 
+    font-size: 12px;
+    padding: 50px 20px;
+  } 
+
  }
 
  @media screen and (min-width: 1024px) {
 
   .main-container {
     padding: 20px 270px 80px;
+  }
+
+  .menu-list li {
+    font-size: 14px;
   }
  }
 
@@ -703,7 +715,7 @@ a.footer-info-block-title:hover {
   }
 
   .footer-info > div:first-child {
-    margin-left: 50px;
+    margin-left: 60px;
   }
 
   .footer-copy p{
@@ -714,7 +726,7 @@ a.footer-info-block-title:hover {
     position: absolute;
     bottom: 30px;
     right: 0;
-    margin-right: 50px;
+    margin-right: 60px;
   }
 
   a.footer-info-block-title h5 {
@@ -775,7 +787,6 @@ a.footer-info-block-title:hover {
   }
 
   .footer-copy p{
-    margin-left: 99vh;
     font-size: 14px;
   }
   a.footer-info-block-title h5 {
@@ -787,6 +798,10 @@ a.footer-info-block-title:hover {
   }
   .footer-info-block-item {
     font-size: 14px !important;
+  }
+
+  .menu-list li {
+    font-size: 15px;
   }
  }
 
@@ -811,12 +826,18 @@ a.footer-info-block-title:hover {
     padding: 7px 16px;
   }
 
+  .footer-info {
+    bottom: 60px;
+  }
   .footer-info > div:first-child {
     margin-right: 100px;
   }
 
+  .footer-copy {
+    bottom: 60px;
+  }
+
   .footer-copy p{
-    margin-left: 111vh;
     font-size: 16px;
   }
 
@@ -833,5 +854,9 @@ a.footer-info-block-title:hover {
 
   .btn-submit {
     font-size: 20px;
+  }
+
+  .menu-list li {
+    font-size: 16px;
   }
  }
