@@ -233,6 +233,16 @@ function copyToClipboard() {
     });
 }
 
+// function copyToClipboard(button) {
+//     const textToCopy = "play.moonlightrp.fun 22005";
+//     navigator.clipboard.writeText(textToCopy).then(function() {
+//       button.classList.add('copied');
+//       setTimeout(() => button.classList.remove('copied'), 2000); // Remove the class after 1 second
+//     }).catch(function(error) {
+//       console.error("Произошла ошибка при копировании текста: ", error);
+//     });
+//   }
+
 document.querySelectorAll('.scroll-to-steps').forEach(function(element) {
     element.addEventListener('click', function(event) {
         event.preventDefault();

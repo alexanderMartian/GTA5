@@ -88,7 +88,7 @@ body {
 }
 .logo {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
   color: #ffffff;
 }
 .box-container {
@@ -396,7 +396,7 @@ body {
 }
 
 .mouse-scroll {
-padding: 60px 0 30px;
+  padding: 60px 0 30px;
 }
 .union {
   position: absolute;
@@ -593,7 +593,29 @@ padding: 60px 0 30px;
   font-family: "Druk Wide Cy Web Medium Regular" !important;
   font-weight: 700 !important;
   font-size: 20px;
+  transition: background-color 1s, color 1s;
 }
+
+.view-btn.copied {
+  animation: copied-animation 1s ease-in-out;
+}
+
+@keyframes copied-animation {
+  0% {
+    transform: scale(1);
+    background-color: #4caf50; /* Green */
+    color: white;
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: #45a049;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #4caf50;
+  }
+}
+
 
 #sofq {
   position: relative;
@@ -876,6 +898,16 @@ a.footer-info-block-title:hover {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .logo {
+    font-size: 22px;
+   }
+
+   .mouse-text p {
+    font-size: 15px;
+   }
+}
+
 @media screen and (max-width: 1216px) {
   .title-bg {
     font-size: 62px;
@@ -934,10 +966,6 @@ a.footer-info-block-title:hover {
   }
   .mySwiper {
     display: none;
-  }
-  .logo {
-   font-size: 24px;
-
   }
   .hero-card {
     width: 10vw;
@@ -1506,6 +1534,10 @@ a.footer-info-block-title:hover {
   .botoom-linear-steps {
 
   }
+
+  .view-btn {
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1550,7 +1582,6 @@ a.footer-info-block-title:hover {
 
   .footer-info-block-item {
     color: #ffffff;
-    margin-bottom: 5px;
   }
   
   .footer-copy {
