@@ -239,3 +239,10 @@ document.querySelectorAll('.scroll-to-steps').forEach(function(element) {
         document.getElementById('steps').scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+document.querySelectorAll('.scroll-to-faq').forEach(function(element) {
+    element.addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('faq').scrollIntoView({ behavior: 'smooth' });
+    });
+});
