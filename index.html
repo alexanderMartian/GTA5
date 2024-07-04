@@ -20,6 +20,14 @@
     <link rel="stylesheet" href="assets/css/newStyle.css" />
   </head>
   <body>
+    <div class="custom-modal" id="custom-modal">
+      <div class="custom-question">Ви впевнені?</div>
+      <div class="custom-buttons">
+        <a class="custom-confirm" href="donate.html">Так</a>
+        <button class="custom-cancel" onclick="closeCustomModal()">Ні</button>
+      </div>
+      <div class="custom-vertical-line"></div>
+    </div>
     <div class="header-box"></div>
     <!-- ======= Header ======= -->
     <header id="header">
@@ -40,7 +48,10 @@
         <div class="menu-box" onclick="openCustomModal()"></div>
       </div>
       <div class="toggle-icon" id="toggleButton">
-
+        <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="28" height="3" rx="1.5" fill="white"/>
+          <rect y="9" width="20" height="3" rx="1.5" fill="white"/>
+        </svg>
       </div> 
     </header>
     <!-- End Header -->
@@ -48,11 +59,11 @@
       <section id="hero">
         <div class="hero-wrapper">
           <div class="overlay"></div>
-          <img src="assets/images/hero-left.webp" alt="hero-left" class="hero-left img" />
+          <img src="assets/images/hero-left.webp" alt="hero-left icon" class="hero-left" />
           <div class="hero-display-cards"> 
             <div class="hero-card"> 
-              <a href="in">
-                <img src="assets/images/hero-card-left.webp" alt="hero-card-img" class="hero-card-img" /> 
+              <a href="">
+                <img src="assets/images/hero-card-left.webp" alt="hero-card-forum" class="hero-card-img" /> 
                 <div class="card-content"> 
                   <img src="assets/images/card-icon-left.webp" alt="" /> 
                   <h4>ФОРУМ</h4> 
@@ -61,8 +72,8 @@
             </div> 
             <div class="hero-card scroll-to-steps"> 
               <a>
-                <img src="assets/images/arrow-down.webp" alt="" class="arrow-down" />
-                <img src="assets/images/hero-card-middle.webp" class="hero-card-img"/> 
+                <img src="assets/images/arrow-down.webp" alt="arrow icon" class="arrow-down" />
+                <img src="assets/images/hero-card-middle.webp" alt="hero card middle icon" class="hero-card-img"/> 
                 <div class="card-content"> 
                   <img src="assets/images/card-icon-middle.webp" class="card-middle-icon"/> 
                   <h4> 
@@ -77,19 +88,19 @@
               <a href="donate.html">
                 <img src="assets/images/hero-card-right.webp" alt="hero-card-img" class="hero-card-img" /> 
                 <div class="card-content"> 
-                  <img src="assets/images/card-icon-right.webp" alt="" /> 
+                  <img src="assets/images/card-icon-right.webp" alt="donate icon" /> 
                   <h4>ДОНАТ</h4> 
                 </div> 
               </a>
             </div> 
           </div>
-          <img src="assets/images/hero-right.webp" alt="hero-right img" class="hero-right" />
-          <img src="assets/images/linear.webp" alt="linear img" class="botoom-linear-hero" />
-          <img src="assets/images/dots.webp" alt="dont img" class="botoom-dots" />
+          <img src="assets/images/hero-right.webp" alt="hero right icon" class="hero-right" />
+          <img src="assets/images/linear.webp" alt="linear icon" class="botoom-linear-hero" />
+          <img src="assets/images/dots.webp" alt="dots icon" class="botoom-dots" />
         </div>
       </section>
       <section class="video-steps">
-        <img src="assets/images/video-top.webp" alt="" class="video-top" />
+        <img src="assets/images/video-top.webp" alt="video top icon" class="video-top" />
         <section id="videos">
           <div class="overlay"></div>
           <div class="container">
