@@ -209,10 +209,17 @@ function closeCustomModal() {
 }
 
 
-function copyToClipboard() {
+function copyToClipboard(button) {
     const textToCopy = "play.moonlightrp.fun 22005";
-    navigator.clipboard.writeText(textToCopy).catch(function(error) {
-        console.error("Произошла ошибка при копировании текста: ", error);
+    
+    navigator.clipboard.writeText(textToCopy).then(function() {
+        button.classList.add('copied');
+
+        setTimeout(() => {
+            button.classList.remove('copied');
+        }, 1500);
+    }).catch(function(error) {
+        console.error(error);
     });
 }
 

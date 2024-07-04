@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-/* @import url("https://db.onlinewebfonts.com/c/8db9d40071db7a82e8941dd9a1adeaba?family=Druk+Wide+Cy+Web+Medium+Regular"); */
+@import url("https://db.onlinewebfonts.com/c/8db9d40071db7a82e8941dd9a1adeaba?family=Druk+Wide+Cy+Web+Medium+Regular");
 @import url('https://fonts.cdnfonts.com/css/mont');
 
 * {
@@ -716,6 +716,7 @@ body {
   font-weight: 700 !important;
   font-size: 14px;
   transition: background-color 1s, color 1s;
+  transition: transform 0.3s ease;
 }
 
 .view-btn.copied {
@@ -725,19 +726,14 @@ body {
 @keyframes copied-animation {
   0% {
     transform: scale(1);
-    background-color: #4caf50;
-    color: white;
   }
   50% {
     transform: scale(1.1);
-    background-color: #45a049;
   }
   100% {
     transform: scale(1);
-    background-color: #4caf50;
   }
 }
-
 
 #sofq {
   position: relative;
@@ -1262,8 +1258,8 @@ a.footer-info-block-title:hover {
   }
 
   .view-btn {
-    font-size: 10px;
-    width: 150px;
+    font-size: 14px;
+    width: 170px;
   }
   .faq-container {
     margin: 0 35px;
@@ -1368,8 +1364,8 @@ a.footer-info-block-title:hover {
     font-size: 16px;
   }
   .view-btn {
-    font-size: 15px;
-    width: 170px;
+    font-size: 18px;
+    width: 200px;
   }
   .social-container {
     display: flex;
@@ -1422,8 +1418,8 @@ a.footer-info-block-title:hover {
     font-size: 20px;
   }
   .view-btn {
-    font-size: 17px;
-    width: 190px;
+    font-size: 19px;
+    width: 210px;
   }
   .social-container {
     display: flex;
@@ -1481,7 +1477,6 @@ a.footer-info-block-title:hover {
   .hero-wrapper {
     padding-top: 150px;
   }
-
   .video-banner {
     height: 540px;
   }
@@ -1496,7 +1491,7 @@ a.footer-info-block-title:hover {
   }
   .view-btn {
     font-size: 20px;
-    width: 209px;
+    width: 230px;
   }
   .step-num {
     min-width: 120px;
