@@ -966,12 +966,12 @@ body {
   margin-bottom: 10px;
 }
 
-a.footer-info-block-title h5 {
+a.footer-info-block-title p {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
 }
 
-div.footer-info-block-title h5 {
+div.footer-info-block-title p {
   font-family: "Druk Wide Cy Web Medium Regular";
   font-weight: 700;
   font-size: 20px;
@@ -1270,7 +1270,7 @@ a.footer-info-block-title:hover {
     align-items: flex-end;
   }
 
-  .footer-info-block-title h5 {
+  .footer-info-block-title p {
     margin-bottom: 10px;
 }
 
