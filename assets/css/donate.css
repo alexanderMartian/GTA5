@@ -481,20 +481,17 @@ a.footer-info-block-title:hover {
     display: flex;
     justify-content: end;
   }
-}
-
-@media screen and (max-width: 820px) {
-
-.menu-list li {
+  .menu-list li {
     padding: 20px 10px;
 }
-.menu-box {
-  margin-right: 10px;
+  .menu-box {
+    margin-right: 10px;
+  }
+  .menu-list-link {
+    text-transform: uppercase;
+  }
 }
-.menu-list-link {
-  text-transform: uppercase;
-}
-}
+
 /* Header END */
 
 

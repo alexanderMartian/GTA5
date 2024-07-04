@@ -67,40 +67,6 @@ $(document).ready(function () {
     onscroll(document, navbarlinksActive)
 
     /**
-     * Scrolls to an element with header offset
-     */
-    // const scrollto = (el) => {
-    //     let header = select('#header')
-    //     let offset = header.offsetHeight
-
-    //     if (!header.classList.contains('header-scrolled')) {
-    //         offset -= 20
-    //     }
-
-    //     let elementPos = select(el).offsetTop
-    //     window.scrollTo({
-    //         top: elementPos - offset,
-    //         behavior: 'smooth'
-    //     })
-    // }
-
-    // /**
-    //  * Toggle .header-scrolled class to #header when page is scrolled
-    //  */
-    // let selectHeader = select('#header')
-    // if (selectHeader) {
-    //     const headerScrolled = () => {
-    //         if (window.scrollY > 100) {
-    //             selectHeader.classList.add('header-scrolled')
-    //         } else {
-    //             selectHeader.classList.remove('header-scrolled')
-    //         }
-    //     }
-    //     window.addEventListener('load', headerScrolled)
-    //     onscroll(document, headerScrolled)
-    // }
-
-    /**
      * Back to top button
      */
     let backtotop = select('.back-to-top')
@@ -134,8 +100,6 @@ $(document).ready(function () {
             this.nextElementSibling.classList.toggle('dropdown-active')
         }
     }, true)
-
-
 
     // swiper initialization
     var swiper = new Swiper(".mySwiper", {
@@ -232,16 +196,6 @@ function copyToClipboard() {
         console.error("Произошла ошибка при копировании текста: ", error);
     });
 }
-
-// function copyToClipboard(button) {
-//     const textToCopy = "play.moonlightrp.fun 22005";
-//     navigator.clipboard.writeText(textToCopy).then(function() {
-//       button.classList.add('copied');
-//       setTimeout(() => button.classList.remove('copied'), 2000); // Remove the class after 1 second
-//     }).catch(function(error) {
-//       console.error("Произошла ошибка при копировании текста: ", error);
-//     });
-//   }
 
 document.querySelectorAll('.scroll-to-steps').forEach(function(element) {
     element.addEventListener('click', function(event) {
