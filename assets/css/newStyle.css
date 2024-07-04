@@ -129,89 +129,6 @@ body {
   justify-content: end;
 }
 
-.custom-modal {
-  position: fixed;
-  top: 20%;
-  right: -100%;
-  transform: translateY(-50%);
-  width: 300px;
-  background-color: white !important;
-  border-radius: 10px 0 0 10px !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
-  transition: right 0.3s !important;
-  padding: 20px 40px 20px 0 !important;
-  z-index: 1000 !important;
-}
-
-.custom-modal.open {
-  right: 0 !important;
-}
-
-.custom-question {
-  font-size: 20px !important;
-  font-weight: bold !important;
-  margin-bottom: 15px !important;
-  text-align: center !important;
-  font-family: "Druk Wide Cy Web Medium Regular" !important;
-  font-weight: 500 !important;
-}
-
-.custom-buttons {
-  display: flex !important;
-  justify-content: center !important;
-}
-
-.custom-confirm {
-  margin-right: 25px !important;
-  text-align: center !important;
-  color: black !important;
-}
-
-.custom-buttons * {
-  width: 29% !important;
-  padding: 5px 0 !important;
-  border: 1px solid black !important;
-  border-radius: 10px !important;
-  background-color: white !important;
-  font-size: 15px !important;
-  cursor: pointer !important;
-  transition: background-color 0.3s, color 0.3s !important;
-  font-family: "Druk Wide Cy Web Medium Regular" !important;
-  font-weight: 500 !important;
-}
-
-.custom-buttons button.custom-cancel {
-  background-color: white !important;
-  color: black !important;
-}
-
-.custom-buttons button:hover {
-  background-color: #1ea9f6 !important;
-  color: white !important;
-  border-color: #1ea9f6 !important;
-}
-
-.custom-buttons a:hover {
-  background-color: #1ea9f6 !important;
-  color: white !important;
-  border-color: #1ea9f6 !important;
-}
-
-.custom-cancel:hover {
-  background-color: #1ea9f6 !important;
-  color: white !important;
-  border-color: #1ea9f6 !important;
-}
-
-.custom-vertical-line {
-  height: 70% !important;
-  width: 2px !important;
-  background-color: gray !important;
-  border-radius: 20px 0px 20px 20px; 
-  position: absolute !important;
-  right: 50px !important;
-  top: 20px !important;
-}
 
 /* hero section  */
 
@@ -1000,27 +917,6 @@ a.footer-info-block-title:hover {
   font-family: 'Mont', sans-serif;
   font-weight: 500;
   font-size: 16px;
-}
-
-@media screen and (min-width: 821px) and (min-height: 1180px) and (max-width: 1240px) {
-  .hero-wrapper {
-    height: 60vh;
-  }
-  .hero-display-cards {
-    gap: 10px;
-  }
-}
-
-@media screen and (min-width: 821px) and (max-height: 800px) and (max-width: 1240px) {
-  .hero-wrapper {
-    height: 100vh !important;
-  }
-  .hero-left {
-    height: 85vh !important;
-  }
-  .hero-right {
-    height: 85vh !important;
-  }
 }
 
 @media screen and (min-width: 374px) {
