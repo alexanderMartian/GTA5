@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $('#toggleButton').click(function () {
         if ($(window).width() < 821) {
             $('#toggleDiv').slideToggle();
@@ -13,6 +12,26 @@ $(document).ready(function () {
             $('#toggleDiv').hide(); // Always hide on mobile
         }
     });
+
+    // Close menu when clicking on any menu item
+    $('.menu-list-link, .scroll-to-steps, .scroll-to-faq').click(function () {
+        if ($(window).width() < 821) {
+            $('#toggleDiv').slideUp();
+        }
+    });
+
+    // Ensure regular link behavior for normal links
+    $('.menu-list-link > a').click(function (e) {
+        if (this.hash) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 800, function(){
+                window.location.hash = this.hash;
+            });
+        }
+    });
+
     /**
      * Easy selector helper function
      */
