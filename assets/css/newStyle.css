@@ -216,7 +216,7 @@ body {
 /* hero section  */
 
 #hero {
-  /* background-image: url("../images/hero-mobile.webp"); */
+  background-image: url("../images/hero-mobile.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
