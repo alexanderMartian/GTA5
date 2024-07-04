@@ -810,7 +810,6 @@ body {
   border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
-  transition: all 0.5s ease;
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -824,8 +823,8 @@ body {
 }
 
 .tiktok-btn:hover {
-  color: #000000 !important;
-  background: #ffffff !important;
+  /* color: #000000 !important; */
+  background: #f61e1e !important;
   transition: all 0.5s ease;
 }
 
@@ -840,7 +839,6 @@ body {
   border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
-  transition: all 0.5s ease;
   position: relative;
   display: inline-block;
   z-index: 1000;
