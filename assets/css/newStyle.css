@@ -30,7 +30,7 @@ body {
 --------------------------------------------------------------*/
 #header {
   position: absolute; 
-  margin: 81px 20px 0;
+  margin: 30px 20px 0;
   left: 0; 
   top: 0; 
   right: 0; 
@@ -223,7 +223,7 @@ body {
 }
 
 .hero-wrapper {
-  height: 90vh;
+  height: 100vh;
 }
 
 .hero-wrapper {
@@ -232,7 +232,6 @@ body {
   display: grid;
   place-items: center;
   overflow: hidden;
-  padding-top: 80px;
 }
 .overlay {
   position: absolute;
@@ -1028,6 +1027,10 @@ a.footer-info-block-title:hover {
 }
 
 @media screen and (min-width: 768px) {
+  #header {
+    margin: 30px 30px 0;
+  }
+
   .video-banner {
     height: 400px;
   }
@@ -1298,9 +1301,6 @@ a.footer-info-block-title:hover {
 @media screen and (min-width: 1250px) {
   .hero-card:nth-child(2) {
     margin-top: 20vh;
-  }
-  .hero-wrapper {
-    height: 100vh;
   }
   .hero-left {
     height: 85vh;
