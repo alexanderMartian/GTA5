@@ -753,13 +753,14 @@ body {
   margin-bottom: 80px;
 }
 
-.social-item:not(:last-of-type)  {
+.social-item:not(:last-of-type) {
   margin-bottom: 30px;
 }
 
 .tittle-bg-come {
   font-size: 25px;
 }
+
 .social-column {
   text-align: center;
   padding: 10px 15px;
@@ -770,17 +771,20 @@ body {
   height: 60px;
   margin: 0 auto;
 }
+
 .social-column img {
   margin: 0 auto;
 }
+
 .social-column h5 {
   color: #fff;
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
   margin: 7px 0;
-  font-family: "Oswald", sans-serif
+  font-family: "Oswald", sans-serif;
 }
+
 .social-column p {
   font-size: 14px;
   color: rgb(162, 162, 162);
@@ -825,22 +829,20 @@ body {
   z-index: 1;
   background: rgb(26, 27, 29) !important;
   font-family: "Oswald", sans-serif;
+  transition: all 0.5s ease; /* Добавлено плавное изменение для всех кнопок */
 }
 
 .youtube-btn:hover {
   background: #f61e1e !important;
-  transition: all 0.5s ease;
 }
 
 .tiktok-btn:hover {
-  /* color: #000000 !important; */
-  background: #f61e1e !important;
-  transition: all 0.5s ease;
+  color: #000000 !important;
+  background: #ffffff !important;
 }
 
 .discord-btn:hover {
   background: rgb(88, 101, 242) !important;
-  transition: all 0.5s ease;
 }
 
 .module {
@@ -854,6 +856,7 @@ body {
   z-index: 1000;
   background: rgb(26, 27, 29);
   font-family: "Oswald", sans-serif;
+  transition: all 0.5s ease; /* Добавлено плавное изменение для всех кнопок */
 }
 
 .module::before {
@@ -874,6 +877,7 @@ body {
 .module:hover::before {
   opacity: 1;
 }
+
 
 #faq {
   padding-bottom: 100px;
