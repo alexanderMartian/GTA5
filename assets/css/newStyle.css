@@ -1,7 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-/* @import url("https://db.onlinewebfonts.com/c/8db9d40071db7a82e8941dd9a1adeaba?family=Druk+Wide+Cy+Web+Medium+Regular"); */
-@import url('https://fonts.cdnfonts.com/css/mont');
+@font-face {
+  font-family: "Oswald", sans-serif;
+  src: url('../fonts/oswald/oswald-latin-700.woff2') format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  src: url('../fonts/inter/inter-cyrillic-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "Druk Wide Cy Web Bold Regular";
+  src: url('../fonts/druk/Druk-Wide-Cy.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../fonts/mont/Mont-Heavy.woff2') format('woff2');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../fonts/mont/Mont-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+}
 
 * {
   margin: 0;
@@ -82,7 +107,7 @@ body {
   color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
-  font-family: "Druk Wide Cy Web Medium Regular";
+  font-family: "Druk Wide Cy Web Bold Regular";
   font-weight: 500;
 } 
 
@@ -135,7 +160,7 @@ body {
   right: -100%;
   transform: translateY(-50%);
   width: 300px;
-  background-color: white !important;
+  background: rgb(255, 255, 255) !important;
   border-radius: 10px 0 0 10px !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
   transition: right 0.3s !important;
@@ -149,10 +174,9 @@ body {
 
 .custom-question {
   font-size: 20px !important;
-  font-weight: bold !important;
   margin-bottom: 15px !important;
   text-align: center !important;
-  font-family: "Druk Wide Cy Web Medium Regular" !important;
+  font-family: "Druk Wide Cy Web Bold Regular" !important;
   font-weight: 500 !important;
 }
 
@@ -176,7 +200,7 @@ body {
   font-size: 15px !important;
   cursor: pointer !important;
   transition: background-color 0.3s, color 0.3s !important;
-  font-family: "Druk Wide Cy Web Medium Regular" !important;
+  font-family: "Druk Wide Cy Web Bold Regular" !important;
   font-weight: 500 !important;
 }
 
@@ -343,7 +367,7 @@ body {
 }
 
 .card-content h4{
-  font-family: "Druk Wide Cy Web Medium Regular";
+  font-family: "Druk Wide Cy Web Bold Regular";
   font-weight: 900;
   font-size: 14px;
   margin: 0;
@@ -507,10 +531,10 @@ body {
   height: 20px;
 }
 .mouse-text p {
-  transform: translateY(-2px);
   margin-bottom: 0;
   font-size: 15px;
   font-family: "Inter", sans-serif !important;
+  font-weight: 600;
 }
 
 #steps {
@@ -554,7 +578,7 @@ body {
   color: #ffffff;
   margin-top: 5px;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   font-family: 'Mont', sans-serif;
 }
 
@@ -674,7 +698,7 @@ body {
 }
 .step-num h3 {
   margin-bottom: 0;
-  font-family: "Druk Wide Cy Web Medium Regular";
+  font-family: "Druk Wide Cy Web Bold Regular";
   font-weight: 700;
   font-size: 45px;
 }
@@ -712,7 +736,7 @@ body {
   background-color: transparent;
   color: #b0abab;
   border: 1px solid #b0abab;
-  font-family: "Druk Wide Cy Web Medium Regular" !important;
+  font-family: "Druk Wide Cy Web Bold Regular" !important;
   font-weight: 700 !important;
   font-size: 14px;
   transition: background-color 1s, color 1s;
@@ -782,14 +806,15 @@ body {
   font-weight: 500;
   line-height: 20px;
   margin: 7px 0;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Mont', sans-serif;
+  font-weight: 800;
 }
 
 .social-column p {
   font-size: 14px;
   color: rgb(162, 162, 162);
   line-height: 21px;
-  margin: 10px 0 25px;
+  margin: 10px 0 20px;
   font-family: 'Mont', sans-serif;
   font-weight: 500;
 }
@@ -823,13 +848,13 @@ body {
   padding: 10px 37px;
   border-radius: 10px;
   font-size: 20px;
-  font-weight: 700;
   position: relative;
   display: inline-block;
   z-index: 1;
   background: rgb(26, 27, 29) !important;
-  font-family: "Oswald", sans-serif;
-  transition: all 0.5s ease; /* Добавлено плавное изменение для всех кнопок */
+  font-family: 'Mont', sans-serif;
+  font-weight: 800;
+  transition: all 0.5s ease;
 }
 
 .youtube-btn:hover {
@@ -850,13 +875,13 @@ body {
   padding: 10px 37px;
   border-radius: 10px;
   font-size: 20px;
-  font-weight: 700;
   position: relative;
   display: inline-block;
   z-index: 1000;
   background: rgb(26, 27, 29);
-  font-family: "Oswald", sans-serif;
-  transition: all 0.5s ease; /* Добавлено плавное изменение для всех кнопок */
+  font-family: 'Mont', sans-serif;
+  font-weight: 800;
+  transition: all 0.5s ease;
 }
 
 .module::before {
@@ -980,11 +1005,12 @@ body {
 
 a.footer-info-block-title p {
   font-family: "Oswald", sans-serif;
+  font-weight: 700;
   font-size: 24px;
 }
 
 div.footer-info-block-title p {
-  font-family: "Druk Wide Cy Web Medium Regular";
+  font-family: "Druk Wide Cy Web Bold Regular";
   font-weight: 700;
   font-size: 20px;
 }
@@ -1012,6 +1038,10 @@ a.footer-info-block-title:hover {
   font-family: 'Mont', sans-serif;
   font-weight: 500;
   font-size: 16px;
+}
+
+.footer-copy p {
+  margin: 0;
 }
 
 @media screen and (min-width: 821px) and (min-height: 1180px) and (max-width: 1240px) {
@@ -1263,7 +1293,7 @@ a.footer-info-block-title:hover {
 
   .view-btn {
     font-size: 14px;
-    width: 170px;
+    width: 180px;
   }
   .faq-container {
     margin: 0 35px;
@@ -1294,9 +1324,6 @@ a.footer-info-block-title:hover {
     margin-bottom: 0;
     margin-right: 50px;
   }
-  .footer-copy p {
-    margin: 0;
-  }
 
   .footer-top {
     height: 100px;
@@ -1306,10 +1333,6 @@ a.footer-info-block-title:hover {
     bottom: 170px;
     height: 120px;
     z-index: 11;
-  }
-
-  .steps {
-    background-color: rgba(162, 157, 157, 0.2);
   }
 }
 
@@ -1369,14 +1392,14 @@ a.footer-info-block-title:hover {
   }
   .view-btn {
     font-size: 18px;
-    width: 200px;
+    width: 210px;
   }
   .social-container {
     display: flex;
     margin: 80px;
   }
   .social-column p {
-    margin-top: 25px;
+    margin-top: 18px;
     height: 70px;
   }
   .social-container > div {
@@ -1430,7 +1453,6 @@ a.footer-info-block-title:hover {
     margin: 80px;
   }
   .social-column p {
-    margin-top: 25px;
     height: 70px;
   }
   .mouse-scroll {
