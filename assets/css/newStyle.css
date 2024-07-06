@@ -588,6 +588,25 @@ body {
   display: none;
 }
 
+.slider {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-slide {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: left;
+}
+
 .steps {
   border-radius: 20px;
   border: 1px solid #565656;
