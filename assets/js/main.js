@@ -159,26 +159,33 @@ $(document).ready(function () {
 });
 
 window.addEventListener("DOMContentLoaded", function () {
-    gsap.set(".hero-left", { opacity: 0 });
-    gsap.set(".hero-right", { opacity: 0, y: -100 });
-    gsap.set(".hero-card", { opacity: 0, y: -100 });
+    gsap.set(".hero-left", { opacity: 0, y: -150 });
+    gsap.set(".hero-right", { opacity: 0, y: -150 });
+    gsap.set(".hero-card", { opacity: 0, y: -150 });
     gsap.defaults({ duration: 1, ease: "power3.out" });
 
-    const tl = gsap.timeline({ pause: true, delay: 0.5 });
+    const tl = gsap.timeline({ paused: true, delay: 0.5 });
+
     tl.to(".hero-card", {
         y: 0,
         opacity: 1,
         stagger: 0.1
-    }).to(
-        ".hero-right", {
+    }, 0)
+    .to(".hero-right", {
         opacity: 1,
         y: 0
-    }
-    ).to(".hero-left", {
+    }, 0)
+    .to(".hero-left", {
         opacity: 1,
         y: 0
-    }, "<")
-})
+    }, 0);
+
+    tl.eventCallback("onStart", function() {
+        console.log("Animation started");
+    });
+
+    tl.play();
+});
 
 document.querySelectorAll('.steps').forEach(step => {
     step.addEventListener('mouseenter', function() {

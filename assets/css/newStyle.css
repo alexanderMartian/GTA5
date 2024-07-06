@@ -263,6 +263,7 @@ body {
   width: 27%;
   height: 92vh;
   z-index: 99;
+  opacity: 0;
 }
 .hero-right {
   position: absolute;
@@ -271,6 +272,7 @@ body {
   width: 27%;
   height: 92vh;
   z-index: 99;
+  opacity: 0;
 }
 .botoom-linear-hero {
   position: absolute;
@@ -330,6 +332,7 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
   z-index: 101;
+  opacity: 0;
 }
 
 .hero-card-img {
@@ -1328,7 +1331,7 @@ a.footer-info-block-title:hover {
 
 @media screen and (min-width: 1250px) {
   .hero-card:nth-child(2) {
-    margin-top: 20vh;
+    margin-top: 30vh;
   }
   .hero-wrapper {
     height: 100vh;
@@ -1420,6 +1423,9 @@ a.footer-info-block-title:hover {
 }
 
 @media screen and (min-width: 1560px) {
+  .hero-card:nth-child(2) {
+    margin-top: 20vh;
+}
   .menu-list li {
     font-size: 15px;
     padding: 30px;
