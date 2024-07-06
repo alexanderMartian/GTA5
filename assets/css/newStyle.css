@@ -316,7 +316,7 @@ body {
   margin-top: 80%;
   position: absolute;
   z-index: 111;
-  bottom: 40px;
+  bottom: 100px;
   border-radius: 20px;
   place-items: center;
 }
