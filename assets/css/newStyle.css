@@ -46,7 +46,6 @@ img {
   display: block;
 }
 body {
-  /* font-family: "Oswald", sans-serif !important; */
   background-color: #1d1e20;
 }
 
@@ -70,12 +69,6 @@ body {
 
 #header > div {
   width: 100vw;
-}
-
-.header-box {
-  background-color: #05040A;
-  width: 100%;
-  height: 81px;
 }
 
 .menu-container {
@@ -807,7 +800,7 @@ body {
   line-height: 20px;
   margin: 7px 0;
   font-family: 'Mont', sans-serif;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .social-column p {
@@ -853,7 +846,7 @@ body {
   z-index: 1;
   background: rgb(26, 27, 29) !important;
   font-family: 'Mont', sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   transition: all 0.5s ease;
 }
 
@@ -880,7 +873,7 @@ body {
   z-index: 1000;
   background: rgb(26, 27, 29);
   font-family: 'Mont', sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   transition: all 0.5s ease;
 }
 
@@ -1139,9 +1132,6 @@ a.footer-info-block-title:hover {
 }
 
 @media screen and (min-width: 821px) {
-  .header-box {
-    display: none;
-  }
   #header {
     margin: 20px 40px 0;
   }
@@ -1526,7 +1516,7 @@ a.footer-info-block-title:hover {
     max-height: 120px;
   }
   .desktop-step {
-    margin: 0 300px;
+    margin: 0 330px;
   }
   .social-container {
     margin: 80px 280px;
