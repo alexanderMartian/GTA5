@@ -1319,7 +1319,7 @@ a.footer-info-block-title:hover {
   }
 
   .footer-top {
-    height: 100px;
+    height: 130px;
   }
 
   .footer-dots {
@@ -1415,11 +1415,17 @@ a.footer-info-block-title:hover {
   }
   .footer-dots {
     bottom: 150px;
-    height: 130px;
+    height: 170px;
+  }
+  .footer-top {
+    height: 200px;
   }
   .footer {
     padding-top: 50px;
   }
+  .botoom-linear-steps {
+    height: 230px;
+}
 }
 
 @media screen and (min-width: 1560px) {
