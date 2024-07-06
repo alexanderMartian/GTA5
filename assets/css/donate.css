@@ -661,6 +661,8 @@ a.footer-info-block-title:hover {
     width: 70%;
     object-fit: cover;
     max-width: 100%;
+    opacity: 0;
+    transform: translateY(-400px);
   }
 
   .main-container {
@@ -668,6 +670,8 @@ a.footer-info-block-title:hover {
     width: 40%;
     padding: 80px 100px 0 50px;
     box-shadow: none;
+    opacity: 0;
+    transform: translateX(700px);
   }
 
   .overlayDesktop {

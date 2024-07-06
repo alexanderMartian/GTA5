@@ -187,6 +187,27 @@ window.addEventListener("DOMContentLoaded", function () {
     tl.play();
 });
 
+window.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth >= 1250) {
+        gsap.set(".main-picture-item", { opacity: 0, y: -400 });
+        gsap.set(".main-container", { opacity: 0, x: 700 });
+        gsap.defaults({ duration: 1, ease: "power3.out" });
+    
+        const tl = gsap.timeline({ paused: true, delay: 0.5 });
+    
+        tl.to(".main-picture-item", {
+            opacity: 1,
+            y: 0
+        }, 0)
+        .to(".main-container", {
+            opacity: 1,
+            x: 0
+        }, 0);
+    
+        tl.play();
+    }
+});
+
 document.querySelectorAll('.steps').forEach(step => {
     step.addEventListener('mouseenter', function() {
       this.classList.add('hover');
