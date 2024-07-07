@@ -14,7 +14,7 @@ $(document).ready(function () {
     });
 
     // Close menu when clicking on any menu item
-    $('.menu-list-link, .scroll-to-steps, .scroll-to-faq').click(function () {
+    $('.scroll-to-steps, .scroll-to-faq').click(function () {
         if ($(window).width() < 821) {
             $('#toggleDiv').slideUp();
         }
