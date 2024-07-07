@@ -28,6 +28,10 @@
   font-weight: 600;
 }
 
+body {
+  overflow: hidden;
+}
+
 * p{
   margin: 0;
   padding: 0;
