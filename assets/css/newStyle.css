@@ -1488,6 +1488,9 @@ a.footer-info-block-title:hover {
   .video-wrapper {
     margin: 0 20px;
   }
+  #faq {
+    padding-bottom: 130px;
+}
 }
 
 @media screen and (min-width: 1980px) {
@@ -1531,7 +1534,7 @@ a.footer-info-block-title:hover {
     margin: 0 330px;
   }
   .social-container {
-    margin: 80px 280px;
+    margin: 80px 330px;
   }
   .faq-container {
     margin: 0 340px;
@@ -1544,5 +1547,11 @@ a.footer-info-block-title:hover {
   }
   .footer-dots {
     height: 270px;
+  }
+  #faq {
+    padding-bottom: 180px;
+  }
+  .social-column p {
+    height: 60px;
   }
 }

@@ -264,3 +264,9 @@ document.querySelectorAll('.scroll-to-faq').forEach(function(element) {
         document.getElementById('faq').scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+/**
+ * Scroll page animation init
+ */
+
+AOS.init();
