@@ -1366,7 +1366,7 @@ a.footer-info-block-title:hover {
   .title-bg {
     font-size: 86px;
     line-height: 96px;
-    top: -54px;
+    top: -40px;
   }
 
   .section-title h1 {
@@ -1442,6 +1442,7 @@ a.footer-info-block-title:hover {
   }
   .title-bg {
     font-size: 96px;
+    top: 45px;
   }
   .step-info h4 {
     font-size: 28px;
