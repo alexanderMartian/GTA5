@@ -93,26 +93,37 @@ body {
 
 .menu-list li { 
   width: 100%;
-  padding: 10px 20px;
-  border: 1px solid #1ea9f6;
-  border-radius: 10px;
   text-align: center;
   color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
   font-family: "Druk Wide Cy Web Bold Regular";
   font-weight: 500;
-} 
+}
+
+.menu-list-link-desktop {
+  border-radius: 10px;
+}
+
+.menu-list-scroll-desktop  {
+  border: 1px solid #1ea9f6;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
 
 .menu-list li a {
   color: #ffffff;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #1ea9f6;
+  border-radius: 10px;
 }
 
-.menu-list-link:hover a { 
+.menu-list-scroll-desktop:hover { 
   color: #1ea9f6;
 } 
 
-.menu-list-link:hover { 
+.menu-list-link-desktop:hover a { 
   color: #1ea9f6;
 } 
 
@@ -1174,9 +1185,16 @@ a.footer-info-block-title:hover {
     flex-direction: row;
   }
 
+  .menu-list-link-desktop {
+    padding: 0 !important;
+  }
+
+  menu-list-scroll-desktop {
+    padding: 20px;
+  }
+
   .menu-list li {
     margin: 0;
-    padding: 20px;
     cursor: pointer;
     font-family: 'Mont', sans-serif;
     font-weight: 800;
@@ -1184,6 +1202,11 @@ a.footer-info-block-title:hover {
     text-transform: none;
     font-size: 12px;
     width: auto;
+  }
+
+  .menu-list li a {
+    border: none;
+    padding: 20px;
   }
 
   .logo-container {
@@ -1435,6 +1458,13 @@ a.footer-info-block-title:hover {
 }
   .menu-list li {
     font-size: 15px;
+  }
+  
+  .menu-list li a {
+    padding: 30px;
+  }
+
+  menu-list-scroll-desktop {
     padding: 30px;
   }
   .card-content h4 {
