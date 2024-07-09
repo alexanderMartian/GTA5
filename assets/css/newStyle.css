@@ -1472,7 +1472,7 @@ a.footer-info-block-title:hover {
   }
   .title-bg {
     font-size: 96px;
-    top: 45px;
+    top: -45px;
   }
   .step-info h4 {
     font-size: 28px;
