@@ -883,7 +883,7 @@ body {
 }
 
 .insta-border {
-  background: linear-gradient(to right, red, purple);
+  background: linear-gradient(to top right, yellow, red, purple);
 }
 
 .youtube-border {
@@ -944,7 +944,7 @@ body {
   left: -1px;
   width: calc(100% + 2px);
   height: calc(100% + 2px);
-  background: linear-gradient(to right, red, purple);
+  background: linear-gradient(to top right, yellow, red, purple);
   transition: opacity 0.5s ease;
   border-radius: 10px;
   z-index: -1;
